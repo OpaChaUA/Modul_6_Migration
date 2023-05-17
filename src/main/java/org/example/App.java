@@ -4,7 +4,6 @@ import java.sql.Connection;
 
 public class App {
     public static void main(String[] args) {
-        Connection connection = Database.getInstance().getConnection();
         new FlayWayConfiguration().initDb();
 
       ClientSevice clientService = new ClientSevice();
