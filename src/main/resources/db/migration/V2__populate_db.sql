@@ -1,0 +1,61 @@
+INSERT INTO worker (name, birthday, level, salary) VALUES
+  ('John', '1994-01-07', 'Middle', 3500),
+  ('Max', '1993-07-12', 'Junior', 700),
+  ('Ivan', '2005-10-10', 'Trainee', 450),
+  ('Anna', '1990-12-29', 'Middle', 3000),
+  ('Juli', '1994-12-29', 'Senior', 8500),
+  ('Sergey', '1970-05-07', 'Senior', 8500),
+  ('Bobo', '2008-02-15', 'Middle', 1250),
+  ('Den', '1989-03-08', 'Trainee', 250),
+  ('Patrik', '1988-07-29', 'Senior', 9000),
+  ('Kostya', '1994-07-29', 'Junior', 450);
+
+INSERT INTO client (name) VALUES
+  ('TechNova'),
+  ('DataForge'),
+  ('PixelCore'),
+  ('NetQuest'),
+  ('MindHive');
+
+INSERT INTO project (client_id, name, start_date, finish_date) VALUES
+  (1, 'Project A', '2023-01-20', '2023-03-22'),
+  (2, 'Project B', '2023-01-20', '2023-04-21'),
+  (2, 'Project C', '2023-01-20', '2023-05-03'),
+  (3, 'Project D', '2023-01-20', '2023-06-29'),
+  (4, 'Project E', '2023-01-20', '2023-07-01'),
+  (5, 'Project F', '2023-01-20', '2023-08-16'),
+  (5, 'Project G', '2023-01-20', '2023-09-02'),
+  (5, 'Project H', '2023-01-20', '2023-10-26'),
+  (3, 'Project I', '2023-01-20', '2023-11-12'),
+  (1, 'Project J', '2023-01-20', '2023-12-25');
+
+INSERT INTO project_worker (project_id, worker_id) VALUES
+(1,8),
+(1,7),
+(2,8),
+(2,9),
+(2,3),
+(2,10),
+(2,5),
+(3,4),
+(3,3),
+(4,4),
+(4,9),
+(4,2),
+(5,1),
+(5,6),
+(5,4),
+(5,8),
+(6,4),
+(6,7),
+(7,5),
+(7,9),
+(8,10),
+(8,1),
+(8,5),
+(9,9),
+(9,3),
+(9,6),
+(10,10),
+(10,4),
+(10,2);
